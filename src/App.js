@@ -11,7 +11,7 @@ const App = ()=>{
     return (
         <BrowserRouter>
             <context.Provider value={{themeIMG , setThemeIMG}}>
-                <div className={` app ${()=>{}}`}>
+                <div className={` app`}>
                     <Layout/>
                 </div>
             </context.Provider>
