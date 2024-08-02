@@ -24,7 +24,7 @@ body{
 /* ======================================================== layout ==================================================== */
 .layout{
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh !important;
 }
 
 .layout.HOME{
@@ -152,7 +152,7 @@ body{
 
 /* ======================================================== HOME ==================================================== */
 .homeCompo{
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
 }
 
@@ -183,8 +183,9 @@ body{
 
 /* ======================================================== DESTINATION ==================================================== */
 .destinationCompo {
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
+    text-align: center;
 }
 
 .destinationCompo .title{
@@ -198,7 +199,26 @@ body{
 }
 
 @media screen and (min-width : 993px) {
+    .destinationCompo {
+        text-align: left;
+    }
     .destinationCompo .title{
         text-align: left !important;
     }
+}
+
+.destination_Category{
+    transition: all .2s ease-in;
+    cursor: pointer !important;
+}
+
+.destinationCompo .content_title{
+    font-size: 100px;
+    letter-spacing: 15px;
+}
+
+.destinationCompo .content_caption{
+    font-size: 17px !important;
+    text-align: left !important;
+    font-family: Arial, Helvetica, sans-serif;
 }

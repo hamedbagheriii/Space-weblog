@@ -39,12 +39,12 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className='nav-li' onClick={()=>handleSetNavbar('CREW')}>
-                            <NavLink to={'/CREW'} className={({isActive})=>{return isActive ?  'nav-link p-0 text-white pb-3 border-4 border-bottom border-white' : 'nav-link p-0 text-white' }}>
+                            <NavLink to={'/CREW'} className={({isActive})=>{return isActive ?  'nav-link p-0 text-white pb-4 border-3 border-bottom border-white' : 'nav-link p-0 text-white' }}>
                                 02 CREW
                             </NavLink>
                         </li>
                         <li className='nav-li' onClick={()=>handleSetNavbar('TECHNOLOGY')}>
-                            <NavLink to={'/TECHNOLOGY'} className={({isActive})=>{return isActive ?  'nav-link p-0 text-white pb-3 border-4 border-bottom border-white' : 'nav-link p-0 text-white' }}>
+                            <NavLink to={'/TECHNOLOGY'} className={({isActive})=>{return isActive ?  'nav-link p-0 text-white pb-4 border-3 border-bottom border-white' : 'nav-link p-0 text-white' }}>
                                 03 TECHNOLOGY
                             </NavLink>
                         </li>
