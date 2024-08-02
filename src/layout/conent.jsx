@@ -8,13 +8,15 @@ const Conent = () => {
         <div>
             <Routes>
                 
-                <Route path='*' element={<Home/>} />
+                <Route path='/HOME' element={<Home/>} />
 
                 <Route path='/DESTINATION' element={<Destiantion/>} />
 
                 <Route path='/CREW' element={<ss/>} />
                 
                 <Route path='/TECHNOLOGY' element={<ss/>} />
+
+                <Route path='*' element={<Home/>} />
 
             </Routes>
         </div>
