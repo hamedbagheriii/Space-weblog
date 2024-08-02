@@ -51,6 +51,7 @@ body{
     object-fit: cover;
 }
 
+
 /* ============ tablet ======== */
 @media screen and (min-width:568px) {
     .layout.HOME{
@@ -76,6 +77,7 @@ body{
         background-size: cover !important;
         object-fit: cover;
     }
+
 }
 
 /* ============ desktop ======== */
@@ -146,6 +148,8 @@ body{
 /* ======================================================== navbar ==================================================== */
 
 
+
+
 /* ======================================================== HOME ==================================================== */
 .homeCompo{
     height: 80vh;
@@ -171,4 +175,30 @@ body{
     font-size: 17px !important;
     text-align: left !important;
     font-family: Arial, Helvetica, sans-serif;
+}
+/* ======================================================== HOME ==================================================== */
+
+
+
+
+/* ======================================================== DESTINATION ==================================================== */
+.destinationCompo {
+    height: 80vh;
+    width: 100%;
+}
+
+.destinationCompo .title{
+    letter-spacing: 4px;
+    font-size: 23px;
+}
+
+.destinationCompo .moonIMG{
+    min-width: 50% !important;
+    max-width: 80% !important;
+}
+
+@media screen and (min-width : 993px) {
+    .destinationCompo .title{
+        text-align: left !important;
+    }
 }

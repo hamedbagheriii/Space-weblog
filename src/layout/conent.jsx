@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from '../componenets/HOME/home';
+import Destiantion from '../componenets/DESTINATION/destiantion';
 
 const Conent = () => {
     return (
@@ -9,7 +10,7 @@ const Conent = () => {
                 
                 <Route path='*' element={<Home/>} />
 
-                <Route path='/DESTINATION' element={<ss/>} />
+                <Route path='/DESTINATION' element={<Destiantion/>} />
 
                 <Route path='/CREW' element={<ss/>} />
                 
