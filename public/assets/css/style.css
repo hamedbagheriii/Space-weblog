@@ -286,6 +286,7 @@ body{
 .crewCompo .content_title{
     font-size: 80px;
     letter-spacing: 9px;
+    text-transform: uppercase !important;
 }
 
 .crewCompo .content_caption{
@@ -295,6 +296,7 @@ body{
 
 .crewCompo .person_category{
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase !important;
 }
 
 .crewCompo .person_IMG{
@@ -303,9 +305,25 @@ body{
     backdrop-filter: blur(5px);
     box-shadow: 0 0 14px 2px rgb(111, 111, 111);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .crewCompo .person_IMG img{
     min-width: 80% !important;
-    width: 80%;
+    width: 350px !important;
+    height: 400px !important;
+}
+
+.crewCompo .person_IMG img.active{
+    animation: perosnIMG 1s ease-in-out ;
+    display: flex;
+}
+
+@keyframes perosnIMG {
+    0%{
+        opacity:0%;
+    }
+    100%{
+        opacity: 1;
+    }
 }
