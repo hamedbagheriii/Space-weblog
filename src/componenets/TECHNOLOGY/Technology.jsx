@@ -46,7 +46,7 @@ const Technology = () => {
                 </div>
             </div>
             <div className="col-12 col-lg-7 h-100 text-white d-flex align-items-center justify-content-center mt-4 mt-lg-0">
-                <div className="w-100 row align-items-center">
+                <div className="w-100 h- row align-items-center">
                     <div className='gap-3 h-100 d-flex flex-column col-12 col-lg-9'>
                         <span className='d-block person_category w-100 mt-5 fs-5'>THE terminalogy</span>
                         <span className='content_title d-block'>{data.title}</span>
@@ -54,7 +54,7 @@ const Technology = () => {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae exercitationem at eos rem. Sed temporibus sit repellendus deleniti, vero illo nobis impedit ipsam. Aut nisi atque animi pariatur excepturi!
                         </span>
                     </div>
-                    <div className='col-12 col-lg-3 gap-4 h-100 mt-5 mt-lg-0 align-items-center justify-content-around d-flex flex-row flex-lg-column'>
+                    <div className='col-12 col-lg-3 gap-4 pt-lg-5 h-100 mt-5 mt-lg-0 align-items-center justify-content-around d-flex flex-row flex-lg-column'>
                         {allData.map(i=>(
                             <div key={i.id+1} className={i.id == index ? ' bg-white text-dark rounded-circle circle_tech border-1 border-white ' : 'p-2 bg-dark border-white border-1 rounded-circle circle_tech '}>
                                 {i.id+1}
