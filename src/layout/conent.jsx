@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../componenets/HOME/home';
 import Destiantion from '../componenets/DESTINATION/destiantion';
 import Crew from '../componenets/CREW/crew';
+import Technology from '../componenets/TECHNOLOGY/Technology';
 
 const Conent = () => {
     return (
@@ -15,7 +16,7 @@ const Conent = () => {
 
                 <Route path='/CREW' element={<Crew/>} />
                 
-                <Route path='/TECHNOLOGY' element={<ss/>} />
+                <Route path='/TECHNOLOGY' element={<Technology/>} />
 
                 <Route path='*' element={<Home/>} />
 

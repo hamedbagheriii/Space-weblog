@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Slider from '../Ul/slider/slider';
-import personIMG1 from './assets/crew/image-anousheh-ansari.png'
-import personIMG2 from './assets/crew/image-douglas-hurley.png'
-import personIMG3 from './assets/crew/image-mark-shuttleworth.png'
-import personIMG4 from './assets/crew/image-victor-glover.png'
+import personIMG1 from './crew/image-anousheh-ansari.png'
+import personIMG2 from './crew/image-douglas-hurley.png'
+import personIMG3 from './crew/image-mark-shuttleworth.png'
+import personIMG4 from './crew/image-victor-glover.png'
 
 
 const Crew = () => {
@@ -41,7 +40,7 @@ const Crew = () => {
     return (
         <div className='crewCompo container-fluid ps-lg-5 mx-auto row mb-5'>
             <div className="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center mt-5 mt-lg-0">
-                <div className='person_IMG pt-5 d-flex flex-column align-items-end justify-content-end'>
+                <div className='person_IMG pt-5 px-4 d-flex flex-column align-items-end justify-content-end'>
                     {allPerson.map(i=>(
                         <img key={i.id} src={i.img} className={i.id == index ? 'mx-auto active' : 'mx-auto d-none'} />
                     ))}
@@ -53,12 +52,12 @@ const Crew = () => {
                         <span className='title text-white w-100 text-center ps-lg-0'>03  MEET YOUR CREW</span>
                         <div className='w-100 gap-3 d-flex flex-column'>
                             <span className='d-block person_category w-100 mt-5 fs-2'>{data.category}</span>
-                            <span className='content_title d-flex w-100 '>{data.name}</span>
+                            <span className='content_title d-block'>{data.name}</span>
                             <span className='content_caption w-100'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae exercitationem at eos rem. Sed temporibus sit repellendus deleniti, vero illo nobis impedit ipsam. Aut nisi atque animi pariatur excepturi!
                             </span>
                         </div>
-                        <div className='d-flex justify-content-center justify-content-lg-start mt-4 gap-3'>
+                        <div className='d-flex justify-content-center justify-content-lg-start mt-4 gap-3' style={{direction:'ltr'}}>
                             {allPerson.map(i=>(
                                 <span key={i.id} className={i.id == index ? 'bg-white p-2 rounded-circle' : 'bg-dark p-2 rounded-circle'}></span>
                             ))}
